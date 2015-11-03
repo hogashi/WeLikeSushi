@@ -21,7 +21,7 @@ function start(){
 					iconParents[j].appendChild(sushiemoji);
 				}
 				var innertext = tweets[i].querySelector('.ProfileTweet-actionList .ProfileTweet-action--favorite');
-				innertext.innerHTML = innertext.innerHTML.replace(/いいね/g, "寿司");
+				innertext.innerHTML = innertext.innerHTML.replace(/「いいね」を取り消す/g, "帰す").replace(/いいね/g, "握る");
 				// ページ全体の"いいね"を"寿司"に
 				//document.body.innerHTML = document.body.innerHTML.replace(/いいね/g, "寿司");
 			}
