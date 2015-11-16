@@ -14,9 +14,9 @@ function start(){
 			if(!!tweets[i].querySelector('.HeartAnimation')){
 				var iconParents = tweets[i].getElementsByClassName('HeartAnimationContainer');
 				for(var j=0; j<2; j++){
+					iconParents[j].removeChild(tweets[i].querySelector('.HeartAnimation'));
 					var sushiemoji = document.createElement('img');
 					sushiemoji.className = "twitter-emoji";
-					iconParents[j].removeChild(tweets[i].querySelector('.HeartAnimation'));
 					sushiemoji.src = "https://abs.twimg.com/emoji/v1/72x72/" + sushiCodes[j] + ".png";
 					iconParents[j].appendChild(sushiemoji);
 				}
